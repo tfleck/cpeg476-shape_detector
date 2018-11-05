@@ -4,6 +4,9 @@ This project identifies shapes in a provided image, and highlights them with a b
 Dependencies:
 OpenCV - sudo apt-get install opencv (or build from source)
 
+Compilation:
+g++ shapes.cpp -o shapes `pkg-config --cflags --libs opencv`
+
 Usage:
 ./shapes [options]     Outputs image with specified shape highlighted
 Options:
